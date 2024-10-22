@@ -22,9 +22,9 @@ public class ProductService {
         myList.add(product);
         return myList;
     }
-    public List<Product> deleteProduct( int id, Product product) {
+    public List<Product> deleteProduct( int id) {
         for (Product p : myList) {
-            if (product.getId() == id) {
+            if (p.getId() == id) {
                 myList.remove(p);
             }
         }
